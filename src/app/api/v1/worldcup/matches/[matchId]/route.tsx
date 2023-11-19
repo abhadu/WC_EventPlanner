@@ -62,7 +62,7 @@ export async function GET(request: NextRequest, { params }: {
             result = ResultWrapper(null, 'some internal error!')
         }
     } catch(e) {
-        result = ResultWrapper(null, e.message)
+        result = ResultWrapper(null, 'some error')
     }
 
     return Response.json(result)
