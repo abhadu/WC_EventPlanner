@@ -4,7 +4,7 @@ export function ResultWrapper<T>(data: T, error: string = ''): Result {
     return {
         success: data ? true : false,
         error: error,
-        data: data ? data : {}
+        data: data ? data : []
     }
 }
 
