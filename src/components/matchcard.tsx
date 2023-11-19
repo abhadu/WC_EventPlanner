@@ -1,6 +1,6 @@
-import { Match } from "@/lib/types";
+import { Match, Team } from "@/lib/types";
 
-export default function MatchCard({ match }: { match: Match }) {
+export default function MatchCard({ match }: { match: Match<Team> }) {
     return (
         <div className="w-48">
             <div className="relative flex flex-row w-full h-44 border border-solid bg-slate-700">
