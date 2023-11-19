@@ -6,7 +6,7 @@ import { ResultWrapper, logoEndpoint } from "../../utils";
 
 export async function GET() {
     let result: Result
-    const client = KVClient()
+    //const client = KVClient()
     const endpoint = `${process.env.SPORTS_API_ENDPOINT}/series/v1/${db.seriesId}`
     
     try {
